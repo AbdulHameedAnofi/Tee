@@ -126,7 +126,7 @@ function StyleSheet() {
             right: 0;
             height: 5px;
             background: #8df0cc;
-            bottom: 50px;
+            top: 0;
             transform-origin: 0%;
         }
 

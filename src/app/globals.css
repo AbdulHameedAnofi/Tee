@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@700,500,400&display=swap');
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -76,7 +79,8 @@
 }
 
 @font-face {
-  font-family: 'Arabic';
+  /* font-family: 'Arabic'; */
+  font-family: 'Clash Display', sans-serif;
   /* font-family: 'Clash Display'; */
   /* Add your Arabic font source */
 }

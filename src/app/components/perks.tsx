@@ -62,7 +62,7 @@ export const Perks = () => {
     <div className="mx-auto px-10 py-16 md:py-24 bg-[#F0F5F6]">
       <div className="mx-auto space-y-12">
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-48">
           <div className="flex items-start gap-6 rounded-3xl p-6">
             <Image className='' src={arrow} alt='' />
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">

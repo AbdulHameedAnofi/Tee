@@ -69,7 +69,7 @@ export const Testimonial = () => {
             className="min-w-[300px] max-w-sm bg-white rounded-2xl p-6 relative snap-center shrink-0"
           >
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              <div className="w-16 h-16 rounded-full bg-[#1A1A28] flex items-center justify-center">
+              <div className="w-16 h-16 rounded-full bg-[#101028] flex items-center justify-center">
                 <Quote className="w-6 h-6 text-white" />
               </div>
             </div>

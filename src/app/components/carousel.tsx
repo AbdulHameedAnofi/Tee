@@ -37,7 +37,6 @@ const discussionSlides: DiscussionSlide[] = [
         image: image4.src
     }
 ]
-
 export const Carousel = () => {
     const [currentSlide, setCurrentSlide] = useState(0)
     const [isSmallScreen, setIsSmallScreen] = useState(false)
@@ -80,12 +79,13 @@ export const Carousel = () => {
                                 <p className="text-white leading-relaxed">{slide.content}</p>
                             </div>
                             <div className="w-full sm:w-1/3 relative">
-                                <img
-                                    src={slide.image}
-                                    alt={slide.title}
-                                    className="aspect-video rounded-lg object-cover"
-                                />
-                                {/* <div className="absolute -right-4 -bottom-4 w-full h-full border-2 border-[#0000FF] rounded-lg" /> */}
+                                <div className="aspect-square rounded-lg overflow-hidden">
+                                    <img
+                                        src={slide.image}
+                                        alt={slide.title}
+                                        className="w-full h-full object-cover"
+                                    />
+                                </div>
                             </div>
                         </div>
                     ))}
@@ -106,10 +106,10 @@ export const Carousel = () => {
                                             {(() => {
                                                 const [first, ...rest] = slide.title.split(' ');
                                                 return (
-                                                    <h2 className="text-white text-4xl">
+                                                    <>
                                                         {first}<br />
                                                         {rest.join(' ')}
-                                                    </h2>
+                                                    </>
                                                 );
                                             })()}
                                         </h2>
@@ -118,18 +118,17 @@ export const Carousel = () => {
                                 </div>
 
                                 <div className="relative">
-                                    <div className="aspect-video rounded-lg overflow-hidden">
+                                    <div className="aspect-square rounded-lg overflow-hidden">
                                         <img
                                             src={slide.image}
                                             alt={slide.title}
-                                            className="object-contain" />
+                                            className="w-full h-full object-cover"
+                                        />
                                     </div>
-                                    {/* <div className="absolute -right-4 -bottom-4 w-full h-full border-2 border-[#0000FF] rounded-lg" /> */}
                                 </div>
                             </div>
                         </div>
                     ))}
-
 
                     <div className="flex justify-center mt-14 cursor-pointer">
                         {discussionSlides.map((_, index) => (

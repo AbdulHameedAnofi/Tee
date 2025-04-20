@@ -1,28 +1,29 @@
 'use client'
-import { Phone, Mail, MessageCircle } from 'lucide-react'
+import { Phone, Mail, Youtube, XIcon } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import cres from '@/../../public/cres.svg'
+import { InstagramLogoIcon } from '@radix-ui/react-icons'
 
 export const Footer = () => {
   const socialLinks = [
     {
-      icon: Phone,
+      icon: InstagramLogoIcon,
       href: '#',
       label: 'Instagram'
     },
     {
-      icon: Phone,
+      icon: XIcon,
       href: '#',
       label: 'Twitter'
     },
     {
-      icon: Phone,
+      icon: Youtube,
       href: '#',
       label: 'YouTube'
     },
     {
-      icon: MessageCircle,
+      icon: Phone,
       href: '#',
       label: 'WhatsApp'
     }
@@ -65,7 +66,7 @@ export const Footer = () => {
                   <Link
                     key={index}
                     href={social.href}
-                    className="w-10 h-10 rounded-full bg-white border border-white flex items-center justify-center text-white hover:bg-[#0000FF] hover:text-white transition-colors"
+                    className="w-10 h-10 rounded-full border border-white flex items-center justify-center text-white hover:text-white transition-colors"
                     aria-label={social.label}
                   >
                     <Icon className="w-5 h-5" />
