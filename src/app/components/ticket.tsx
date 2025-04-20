@@ -6,6 +6,8 @@ import Image from "next/image";
 import tick from '../../../public/tick.svg'
 
 import React from 'react';
+import { FadeIn } from "@/components/uis/FadeIn";
+import { Container } from "@/components/Container";
 
 // const TicketCard: React.FC = () => {
 //   return (
@@ -122,40 +124,42 @@ const TicketCard: React.FC = () => {
 export const Ticket = () => {
   return (
     <section className="mx-auto px-20 py-16 md:py-24 bg-[#F0F5F6]">
-      <div className="grid md:grid-cols-2 gap-12 items-center">
-        <div className="space-y-8">
-          <div className="space-y-4">
-            <p className="text-sm font-medium uppercase tracking-wider">
-              SECURE YOUR SPOT NOW
-              <div className="w-28 mt-1 h-2 bg-[#0017AF]" />
-            </p>
-            <h2 className="text-4xl md:text-5xl font-bold">
-              GET YOUR{' '}
-              <br />
-              <span className="text-[#0017AF]">TICKET</span>{' '}
-              TODAY!
-            </h2>
-          </div>
-          
-          <div className="space-y-4 text-gray-600 text-lg">
-            <p>
-              Witness heart-piercing discussions, explore the meanings
-              of the Qur'an, and immerse yourself in beautiful recitations.
-            </p>
-            <p>
-              Secure your spot at TQC and embark on a spiritual journey
-              like no other.
-            </p>
-          </div>
+      <Container>
+        <FadeIn>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-8">
+              <div className="space-y-4">
+                <p className="text-sm font-medium uppercase tracking-wider">
+                  SECURE YOUR SPOT NOW
+                  <div className="w-28 mt-1 h-2 bg-[#0017AF]" />
+                </p>
+                <h2 className="text-4xl md:text-5xl font-bold">
+                  GET YOUR{' '}
+                  <br />
+                  <span className="text-[#0017AF]">TICKET</span>{' '}
+                  TODAY!
+                </h2>
+              </div>
 
-          <Button 
-            className="bg-[#0017AF] hover:bg-[#0000DD] text-white px-8 py-6 text-lg rounded-md"
-          >
-            Buy Ticket
-          </Button>
-        </div>
+              <div className="space-y-4 text-gray-600 text-lg">
+                <p>
+                  Witness heart-piercing discussions, explore the meanings
+                  of the Qur'an, and immerse yourself in beautiful recitations.
+                </p>
+                <p>
+                  Secure your spot at TQC and embark on a spiritual journey
+                  like no other.
+                </p>
+              </div>
 
-        {/* <div className="relative">
+              <Button
+                className="bg-[#0017AF] hover:bg-[#0000DD] text-white px-8 py-6 text-lg rounded-md"
+              >
+                Buy Ticket
+              </Button>
+            </div>
+
+            {/* <div className="relative">
           <div className="absolute top-4 right-4 w-full h-full">
             <div className="relative w-full h-full">
               <div className="absolute inset-0 bg-[#0000FF] rounded-lg transform rotate-3 opacity-20"></div>
@@ -163,7 +167,7 @@ export const Ticket = () => {
             </div>
           </div> */}
 
-          {/* <div className="relative bg-[#0000FF] text-white p-8 rounded-lg shadow-xl">
+            {/* <div className="relative bg-[#0000FF] text-white p-8 rounded-lg shadow-xl">
             <div className="flex justify-between items-start">
               <div>
                 <h3 className="text-3xl font-bold mb-2">TQC 2.0</h3>
@@ -191,10 +195,12 @@ export const Ticket = () => {
               </div>
             </div>
           </div> */}
-          <Image src={tick} alt="d" />
-        {/* </div> */}
-      </div>
-      {/* <TicketCard /> */}
+            <Image src={tick} alt="d" />
+            {/* </div> */}
+          </div>
+          {/* <TicketCard /> */}
+        </FadeIn>
+      </Container>
     </section>
   )
 }
