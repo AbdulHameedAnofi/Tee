@@ -154,6 +154,7 @@ export const Ticket = () => {
 
               <Button
                 className="bg-[#0017AF] hover:bg-[#0000DD] text-white px-8 py-6 text-lg rounded-md"
+                onClick={() => window.open("https://bitooqoh.com/explore/quran-crescendo", "_blank")}
               >
                 Buy Ticket
               </Button>
