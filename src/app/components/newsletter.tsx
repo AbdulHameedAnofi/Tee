@@ -13,6 +13,10 @@ const NewsletterSection = () => {
     console.log('Newsletter signup:', email)
   }
 
+  const handleRedirect = () => {
+    window.open("https://tally.so/r/w5GZ4d", "_blank")
+  }
+
   return (
     <section className="py-12 px-4 md:py-20 bg-[#101028]">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:-space-x-8 min-h-[400px] md:min-h-[500px] bg-white rounded-3xl lg:mx-24">
@@ -29,17 +33,18 @@ const NewsletterSection = () => {
             </p>
 
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4">
-              <Input
+              {/* <Input
                 type="email"
                 placeholder="Type your email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="flex-1 h-12 px-4 rounded-md border border-gray-200 focus:border-[#0017AF] focus:ring-1 focus:ring-[#0017AF]"
                 required
-              />
+              /> */}
               <Button
                 type="submit"
                 className="h-12 px-6 md:px-8 bg-[#0017AF] hover:bg-[#0000DD] text-white font-medium rounded-md transition-colors"
+                onClick={handleRedirect}
               >
                 Subscribe
               </Button>

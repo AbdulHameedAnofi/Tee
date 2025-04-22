@@ -33,16 +33,16 @@ export const PerkCard: React.FC<PerkCardProps> = ({
 export const Perks = () => {
   const perksData = [
     {
-      title: 'An Experience Like Never Before',
-      color: '#C41E3A',
+      title: 'Where Hearts Converge',
+      color: '#0000FF',
       descriptions: [
         'The Qur\'an Crescendo is an annual conference created to celebrate the Qur\'an, showcase the different aspects of it, and explore its transformative power in our lives.',
         'It brings together top scholars & hearts from all over the world for a one-day experience that takes people closer to The Book.'
       ]
     },
     {
-      title: 'Where Hearts Converge',
-      color: '#0000FF',
+      title: 'An Experience Like Never Before',
+      color: '#C41E3A',
       descriptions: [
         'The Qur\'an Crescendo is an annual conference created to celebrate the Qur\'an, showcase the different aspects of it, and explore its transformative power in our lives.',
         'It brings together top scholars & hearts from all over the world for a one-day experience that takes people closer to The Book.'

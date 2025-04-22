@@ -4,7 +4,7 @@
 import Image from "next/image";
 import tqc from '../../../public/tqc.svg'
 import basmad from '../../../public/basmad.svg'
-import { Amiri_Quran, Cinzel_Decorative } from "next/font/google"
+import { Amiri_Quran, Cinzel } from "next/font/google"
 import quraan from '@/../../public/quran.svg'
 import { Button } from "@/components/ui/button"
 // import { Cinzel } from "next/font/google";
@@ -13,6 +13,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { X, Menu } from "lucide-react";
 import heroOne from '@/../../public/hero1.svg'
 import heroTwo from '@/../../public/hero2.svg'
+import TQCHero from '@/../../public/TQCsign.svg'
 import date from '@/../../public/date.svg'
 import time from '@/../../public/time.svg'
 import location from '@/../../public/location.svg'
@@ -22,7 +23,7 @@ import { useSplitTextAnimation } from "./split";
 
 
 const amiri = Amiri_Quran({ subsets: ["arabic"], weight: "400", });
-const cinzel = Cinzel_Decorative({ subsets: ["latin"], weight: "400", })
+const cinzel = Cinzel({ subsets: ["latin"], weight: "400", })
 
 interface INav {
     href: string;
@@ -99,6 +100,7 @@ export const Hero = () => {
                             <Button
                                 variant="outline"
                                 className="bg-[#CBEFFB] text-[#0017AF] hover:bg-blue-700/80 transition-all"
+                                onClick={() => window.open("https://bitooqoh.com/explore/quran-crescendo", "_blank")}
                             >
                                 Get Tickets
                             </Button>
@@ -147,10 +149,10 @@ export const Hero = () => {
                 {/* </div> */}
                 <main className="relative z-10 flex flex-col items-center justify-center px-4 pt-20 pb-12">
                     <div className="text-center">
-                        <p className={`${cinzel.className} mt-6 mb-6 text-xl font-extrabold md:text-2xl text-[#CBEFFB]/90`}>
+                        <p className={`${cinzel.className} text-xl font-extrabold md:text-2xl text-[#CBEFFB]/90`}>
                             A Global Qur'an Conference
                         </p>
-                        <div className="inline-flex items-center justify-center">
+                        {/* <div className="inline-flex items-center justify-center">
                             <h1 ref={quranRef} className={`${cinzel.className} text-4xl md:text-6xl lg:text-7xl text-[#CBEFFB] font-serif tracking-wide`}>
                                 THE QUR'AN
                             </h1>
@@ -160,13 +162,14 @@ export const Hero = () => {
 
                         </div>
                         <div className="mt-4">
-                            <h2 ref={crescendoRef} className={`${cinzel.className} text-6xl md:text-8xl lg:text-9xl text-[#CBEFFB] font-extrabold tracking-wider`}>
+                            <h2 ref={crescendoRef} className={`${cinzel.className} text-6xl text-base md:text-8xl lg:text-9xl text-[#CBEFFB] font-extrabold tracking-wider`}>
                                 CRESCENDO
                             </h2>
                         </div>
                         <p ref={taglineRef} className={`${cinzel.className} mt-6 text-xl md:text-2xl text-[#CBEFFB]/90 max-w-3xl mx-auto`}>
                             ...Where Hearts Converge
-                        </p>
+                        </p> */}
+                        <Image src={TQCHero} alt=""/>
                     </div>
 
                     <div className="mt-20">
@@ -195,8 +198,8 @@ export const Hero = () => {
                     </div>
 
 
-                    <div className="relative z-10 mt-40 px-6 md:px-12 lg:px-36">
-                        <div className="relative bg-white p-6 md:p-8 flex flex-col lg:flex-row items-center lg:items-start gap-6 shadow-lg -mb-48">
+                    <div className="relative z-10 px-6 md:px-12 lg:px-36">
+                        <div className="relative bg-white m-20 md:p-8 flex flex-col lg:flex-row items-center lg:items-start gap-6 shadow-lg -mb-48">
                             <div className="flex-1 z-20">
                                 <div
                                     className={`${amiri.className} text-2xl md:text-3xl text-black font-arabic text-center lg:text-right leading-loose`}
@@ -211,7 +214,7 @@ export const Hero = () => {
 
                             <div className="hidden lg:block w-1 h-16 mt-6 bg-[#0017AF]"></div>
 
-                            <div className="w-full max-w-xs mt-6 flex justify-center z-1">
+                            <div className="max-w-xs mt-6 flex justify-center z-1">
                                 <Image src={quraan} alt="Qur'an" className="h-auto" />
                             </div>
                         </div>
