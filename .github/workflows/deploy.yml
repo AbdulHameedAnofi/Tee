@@ -13,6 +13,12 @@ jobs:
       - name: ⬇️ Checkout code
         uses: actions/checkout@v3
 
+      - name: 🗝️ Setup SSH
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.CPANEL_SSH_KEY }}
+          ssh-passphrase: ${{ secrets.CPANEL_PASSPHRASE }}
+
       - name: 🧱 Set up Node.js
         uses: actions/setup-node@v3
         with:
@@ -30,5 +36,6 @@ jobs:
           host: ${{ secrets.CPANEL_HOST }}
           username: ${{ secrets.CPANEL_USERNAME }}
           key: ${{ secrets.CPANEL_SSH_KEY }}
+          passphrase: ${{ secrets.CPANEL_PASSPHRASE }}
           source: "out/*"
           target: ${{ secrets.CPANEL_TARGET_DIR }}
