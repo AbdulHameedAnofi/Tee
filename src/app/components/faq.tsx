@@ -32,15 +32,15 @@ import {
       <div className="w-full lg:px-24 px-8 py-32 bg-[#F0F5F6]">
         <h1 className="text-5xl font-bold text-center mb-12">FAQs</h1>
         
-        <Accordion type="single" collapsible className="space-y-4">
+        <Accordion type="single" collapsible className="space-y-4 ">
           {faqs.map((faq, index) => (
             <AccordionItem
               key={index}
               value={`item-${index}`}
-              className="border-none rounded-lg bg-white data-[state=open]:bg-white w-full shadow-xl"
+              className="border-none bg-white data-[state=open]:bg-white w-full px-10"
             >
-              <AccordionTrigger className="hover:no-underline rounded-lg px-6 py-4 text-left">
-                <span className="text-lg font-normal">{faq.question}</span>
+              <AccordionTrigger className="hover:no-underline rounded-lg px-6 py-4 text-left text-[#0017AF]">
+                <span className="md:text-2xl font-normal">{faq.question}</span>
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-4">
                 {faq.answer}

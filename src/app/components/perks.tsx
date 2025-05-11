@@ -16,11 +16,11 @@ export const PerkCard: React.FC<PerkCardProps> = ({
   color = '#000000',
 }) => {
   return (
-    <div className="bg-white rounded-3xl p-6 h-full flex flex-col justify-between">
-      <h2 className="text-2xl md:text-3xl font-semibold" style={{ color }}>
+    <div className="bg-white rounded-3xl p-10 h-full flex flex-col justify-between">
+      <h2 className="md:text-2xl mdtext-3xl font-semibold tracking-tight" style={{ color }}>
         {title}
       </h2>
-      <div className="mt-4 text-lg text-gray-800 space-y-4">
+      <div className="mt-4 text-base text-[#646363] space-y-4">
         {descriptions.map((text, index) => (
           <p key={index}>{text}</p>
         ))}
@@ -34,7 +34,7 @@ export const Perks = () => {
   const perksData = [
     {
       title: 'Where Hearts Converge',
-      color: '#0000FF',
+      color: '#0017AF',
       descriptions: [
         'The Qur\'an Crescendo is an annual conference created to celebrate the Qur\'an, showcase the different aspects of it, and explore its transformative power in our lives.',
         'It brings together top scholars & hearts from all over the world for a one-day experience that takes people closer to The Book.'
@@ -42,7 +42,7 @@ export const Perks = () => {
     },
     {
       title: 'An Experience Like Never Before',
-      color: '#C41E3A',
+      color: '#629DFF',
       descriptions: [
         'The Qur\'an Crescendo is an annual conference created to celebrate the Qur\'an, showcase the different aspects of it, and explore its transformative power in our lives.',
         'It brings together top scholars & hearts from all over the world for a one-day experience that takes people closer to The Book.'
@@ -50,7 +50,7 @@ export const Perks = () => {
     },
     {
       title: 'The Greatest Miracle',
-      color: '#303030',
+      color: '#101010',
       descriptions: [
         'The biggest tragedy facing Muslims all over the world today is the lack of understanding & application of the Qur\'an.',
         'We have the greatest miracle ever given to mankind, yet we\'ve not been able to utilize its transformative power in our daily life. This is the problem The Qur\'an Crescendo is solving.'
@@ -64,7 +64,7 @@ export const Perks = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-48">
           <div className="flex items-start gap-6 rounded-3xl p-6">
-            <Image className='' src={arrow} alt='' />
+            <Image className='' src={arrow} alt='target' />
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">
               What To Look Forward To At The Qur'an Crescendo
             </h1>
