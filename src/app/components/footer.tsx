@@ -65,8 +65,12 @@ export const Footer = () => {
 
           <div className="fle flex-col items-end gap-4">
             <div className="flex flex-col items-end text-lg text-white">
-              <p>+234 (0) 8123456789</p>
-              <p>+234 (0) 9012345678</p>
+              <a href="tel:+2348123456789" className="hover:text-[#0000FF]">
+                +234 (0) 8123456789
+              </a>
+              <a href="tel:+2349012345678" className="hover:text-[#0000FF]">
+                +234 (0) 9012345678
+              </a>
               <a
                 href="mailto:quran.crescendo@gmail.com"
                 className="hover:text-[#0000FF]"

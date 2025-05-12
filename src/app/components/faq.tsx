@@ -37,7 +37,7 @@ import {
             <AccordionItem
               key={index}
               value={`item-${index}`}
-              className="border-none bg-white data-[state=open]:bg-white w-full px-10"
+              className="border-none bg-white data-[state=open]:bg-white w-full px-10 shadow-md"
             >
               <AccordionTrigger className="hover:no-underline rounded-lg px-6 py-4 text-left text-[#0017AF]">
                 <span className="md:text-2xl font-normal">{faq.question}</span>
