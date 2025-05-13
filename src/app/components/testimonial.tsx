@@ -42,7 +42,7 @@ export const Testimonial = () => {
 
   return (
     <section className="mx-auto px-4 py-16 md:py-24 bg-[#101028] relative overflow-hidden ">
-      <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white">
+      <h2 className="text-4xl md:text-5xl font-semibold text-center mb-16 text-white">
         What People Have Said
       </h2>
 

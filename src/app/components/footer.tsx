@@ -69,7 +69,7 @@ export const Footer = () => {
                 +234 (0) 8123456789
               </a>
               <a href="tel:+2349012345678" className="hover:text-[#0000FF]">
-                +234 (0) 9012345678
+                +234 (0) 9012345678 
               </a>
               <a
                 href="mailto:quran.crescendo@gmail.com"

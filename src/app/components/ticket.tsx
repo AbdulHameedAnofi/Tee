@@ -107,11 +107,11 @@ export const Ticket = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <p className="text-sm font-medium uppercase tracking-wider">
+                <p className="text-sm font-normal  uppercase tracking-wider">
                   SECURE YOUR SPOT NOW
-                  <div className="w-28 mt-1 h-2 bg-[#0017AF]" />
+                  <div className="w-28 mt-1 h-[5px] bg-[#0017AF]" />
                 </p>
-                <h2 className="text-4xl md:text-5xl font-bold">
+                <h2 className="text-4xl md:text-5xl font-semibold">
                   GET YOUR <br />
                   <span className="text-[#0017AF]">TICKET</span> TODAY!
                 </h2>

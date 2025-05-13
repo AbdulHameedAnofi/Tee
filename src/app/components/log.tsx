@@ -112,7 +112,7 @@ export const Logs = () => {
   return (
     <div className="mx-auto px-4 py-16 bg-[#F0F5F6]">
       <div className="mb-24">
-        <h2 className="text-4xl md:text-5xl text-center mb-16 font-extrabold">
+        <h2 className="text-4xl md:text-5xl text-center mb-16 font-semibold">
           TQC 1.0 in Numbers
         </h2>
 
@@ -167,7 +167,7 @@ export const Logs = () => {
       </div>
 
       <div className="mb-24">
-        <h2 className="text-4xl md:text-5xl text-center mb-16 font-extrabold">
+        <h2 className="text-4xl md:text-5xl text-center mb-16 font-semibold">
           Sponsors/Partners
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-6 lg:mx-24 gap-6">

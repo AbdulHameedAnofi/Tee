@@ -30,7 +30,7 @@ import {
   
     return (
       <div className="w-full lg:px-24 px-8 py-32 bg-[#F0F5F6]">
-        <h1 className="text-5xl font-bold text-center mb-12">FAQs</h1>
+        <h1 className="text-5xl font-semibold text-center mb-12">FAQs</h1>
         
         <Accordion type="single" collapsible className="space-y-4 ">
           {faqs.map((faq, index) => (

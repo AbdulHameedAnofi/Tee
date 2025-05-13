@@ -17,7 +17,7 @@ export const PerkCard: React.FC<PerkCardProps> = ({
 }) => {
   return (
     <div className="bg-white rounded-3xl p-10 h-full flex flex-col justify-between">
-      <h2 className="md:text-2xl mdtext-3xl font-semibold tracking-tight" style={{ color }}>
+      <h2 className="md:text-2xl mdtext-3xl font-medium tracking-tight" style={{ color }}>
         {title}
       </h2>
       <div className="mt-4 text-base text-[#646363] space-y-4">
@@ -63,9 +63,9 @@ export const Perks = () => {
       <div className="mx-auto space-y-12">
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-48">
-          <div className="flex items-start gap-6 rounded-3xl p-6">
+          <div className="flex items-center gap-12 rounded-3xl p6">
             <Image className='' src={arrow} alt='target' />
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+            <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
               What To Look Forward To At The Qur'an Crescendo
             </h1>
           </div>

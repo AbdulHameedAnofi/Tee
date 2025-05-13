@@ -49,7 +49,7 @@ export const Hero = () => {
         {/* <Container className="">
                     <FadeIn> */}
         <div>
-          <nav className="relative z-20 flex justify-between items-center px-6 py-4 md:px-24">
+          <nav className="relative z-20 flex justify-between items-center px6 py-4 md:px-24">
             <div className="flex items-center gap-4">
               {/* <motion.img
                 src={basmad.src}
@@ -59,67 +59,68 @@ export const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
               /> */}
-              <motion.div
+              {/* <motion.div
                 className="w-10 h-10 md:w-12 md:h-12 bg-blue-600 rounded-full flex items-center justify-center"
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ delay: 0.3 }}
-              >
-                <img
-                  src={tqc.src}
-                  alt="Logo"
-                  className="w-6 h-6 md:w-8 md:h-8"
-                />
-              </motion.div>
+              > */}
+              <img
+                src={tqc.src}
+                alt="Logo"
+                className="w-10 h-10 md:w-12 md:h-12"
+              />
+              {/* </motion.div> */}
             </div>
 
             <div className="hidden md:flex gap-8">
               {navList.map(({ name, href }, index) => (
-                <motion.a
+                <a
                   key={index}
                   href={href}
                   className="text-white text-base tracking-wide hover:text-blue-300 transition-all"
-                  initial={{ opacity: 0, y: -10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.3 + index * 0.1 }}
+                  // initial={{ opacity: 0, y: -10 }}
+                  // animate={{ opacity: 1, y: 0 }}
+                  // transition={{ delay: 0.3 + index * 0.1 }}
                 >
                   {name}
-                </motion.a>
+                </a>
               ))}
             </div>
 
-            <motion.div
+            {/* <motion.div
               className="hidden sm:flex"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.6 }}
-            >
-              <div className="flex gap-4">
-                <Button
-                  className="bg-[#353D59] text-white text-base font-normal border-[0.8px] border-white transition-all"
-                  onClick={() =>
-                    window.open(
-                      "https://bitooqoh.com/explore/quran-crescendo",
-                      "_blank"  
-                    )
-                  }
-                >
-                  Become a Sponsor
-                </Button>
-                <Button
-                  variant="outline"
-                  className="bg-[#CBEFFB] text-[#0017AF] hover:text-white text-base font-normal hover:bg-blue-700/80 transition-all"
-                  onClick={() =>
-                    window.open(
-                      "https://bitooqoh.com/explore/quran-crescendo",
-                      "_blank"
-                    )
-                  }
-                >
-                  Get Tickets
-                </Button>
-              </div>
-            </motion.div>
+            > */}
+            <div className="flex gap-4">
+              <Button
+              variant="outline"
+                className="bg-[#353D59] text-white text-base font-normal border-[0.8px] border-white transition-all"
+                onClick={() =>
+                  window.open(
+                    "https://bitooqoh.com/explore/quran-crescendo",
+                    "_blank"
+                  )
+                }
+              >
+                Become a Sponsor
+              </Button>
+              <Button
+                variant="outline"
+                className="bg-[#CBEFFB] text-[#0017AF] hover:text-white text-base font-normal hover:bg-blue-700/80 transition-all"
+                onClick={() =>
+                  window.open(
+                    "https://bitooqoh.com/explore/quran-crescendo",
+                    "_blank"
+                  )
+                }
+              >
+                Get Tickets
+              </Button>
+            </div>
+            {/* </motion.div> */}
 
             <button
               className="md:hidden z-30"
@@ -186,13 +187,13 @@ export const Hero = () => {
                         <p ref={taglineRef} className={`${cinzel.className} mt-6 text-xl md:text-2xl text-[#CBEFFB]/90 max-w-3xl mx-auto`}>
                             ...Where Hearts Converge
                         </p> */}
-            <Image src={TQCHero} alt="" />
+            <img src="/TQCsign.svg" alt="tqcsign" />
           </div>
 
           <div className="mt-20">
             <div className="flex flex-col lg:flex-row gap-20">
-              <Image src={heroOne} alt="conference-gallery" />
-              <Image src={heroTwo} alt="conference-gallery" />
+              <img src="/hero1.svg" alt="conference-gallery" />
+              <img src="/hero2.svg" alt="conference-gallery" />
             </div>
           </div>
 

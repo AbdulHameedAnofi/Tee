@@ -4,7 +4,9 @@
 
 @import url('https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700,1&display=swap');
 
-
+*{
+ font-family: 'Clash Display', sans-serif;
+}
 @layer base {
   :root {
     --background: 0 0% 100%;
