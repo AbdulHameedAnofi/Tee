@@ -114,9 +114,7 @@ export const Logs = () => {
         {isSmallScreen ? (
           <div className="flex flex-col items-center justify-center gap-8">
             {data.map((item, index) => {
-              const value = visibleItems.includes(index)
-                ? useCountUp(item.value)
-                : '0'
+              const value = useCountUp(item.value)
 
               return (
                 <div
