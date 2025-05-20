@@ -19,7 +19,7 @@ const NewsletterSection = () => {
 
   return (
     <section className="py-12 px-4 md:py-20 bg-[#101028]">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:-space-x-8 min-h-[400px] md:min-h-[500px] bg-white rounded-3xl lg:mx-24">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:-space-x-8 min-h-[400px] md:min-h-[669px] bg-white rounded-3xl lg:mx-24">
         <div className="flex flex-col justify-center p-6 md:p-8 lg:p-12 my-6 md:my-10">
           <div className="max-w-md mx-auto md:mx-0">
             <h2 className="text-4xl md:text-5xl font-semibold mb-2 text-[#0017AF]">

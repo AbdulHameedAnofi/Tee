@@ -41,8 +41,8 @@ export const Testimonial = () => {
   const maskImage = useScrollOverflowMask(scrollXProgress)
 
   return (
-    <section className="mx-auto px-4 py-16 md:py-24 bg-[#101028] relative overflow-hidden">
-      <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white">
+    <section className="mx-auto px-4 py-16 md:py-24 bg-[#101028] relative overflow-hidden ">
+      <h2 className="text-4xl md:text-5xl font-semibold text-center mb-16 text-white">
         What People Have Said
       </h2>
 
@@ -61,7 +61,7 @@ export const Testimonial = () => {
       <motion.ul
         ref={ref}
         style={{ maskImage, WebkitMaskImage: maskImage }}
-        className="flex overflow-x-scroll gap-6 px-6 py-10 snap-x snap-mandatory"
+        className="flex overflow-x-scroll gap-6 px-6 py-10 snap-x snap-mandatory scroll-bar"
       >
         {testimonials.map((testimonial, index) => (
           <li

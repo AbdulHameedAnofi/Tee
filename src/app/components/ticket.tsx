@@ -1,11 +1,10 @@
-'use client'
+"use client";
 
-
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import tick from '../../../public/tick.svg'
+import tick from "../../../public/tick.svg";
 
-import React from 'react';
+import React from "react";
 import { FadeIn } from "@/components/uis/FadeIn";
 import { Container } from "@/components/Container";
 
@@ -54,16 +53,11 @@ import { Container } from "@/components/Container";
 
 // // export default Ticket;
 
-
-
-
 const TicketCard: React.FC = () => {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-200">
       <div className="relative transform rotate-3">
-
         <div className="w-80 h-44 bg-blue-700 text-white rounded-lg shadow-xl relative p-4">
-
           <div className="border-2 border-white p-3 rounded-md">
             <h2 className="text-2xl font-bold mb-1">TQC 2.0</h2>
             <p className="text-sm">Lagos, Nigeria</p>
@@ -72,19 +66,13 @@ const TicketCard: React.FC = () => {
 
           <div className="absolute -left-4 top-0 h-full w-6 flex flex-col justify-between items-center">
             {[...Array(8)].map((_, i) => (
-              <div
-                key={i}
-                className="h-2 w-2 bg-gray-200 rounded-full"
-              ></div>
+              <div key={i} className="h-2 w-2 bg-gray-200 rounded-full"></div>
             ))}
           </div>
 
           <div className="absolute -right-4 top-0 h-full w-6 flex flex-col justify-between items-center">
             {[...Array(8)].map((_, i) => (
-              <div
-                key={i}
-                className="h-2 w-2 bg-gray-200 rounded-full"
-              ></div>
+              <div key={i} className="h-2 w-2 bg-gray-200 rounded-full"></div>
             ))}
           </div>
         </div>
@@ -96,19 +84,13 @@ const TicketCard: React.FC = () => {
 
           <div className="absolute -left-4 top-0 h-full w-6 flex flex-col justify-between items-center">
             {[...Array(8)].map((_, i) => (
-              <div
-                key={i}
-                className="h-2 w-2 bg-white rounded-full"
-              ></div>
+              <div key={i} className="h-2 w-2 bg-white rounded-full"></div>
             ))}
           </div>
 
           <div className="absolute -right-4 top-0 h-full w-6 flex flex-col justify-between items-center">
             {[...Array(8)].map((_, i) => (
-              <div
-                key={i}
-                className="h-2 w-2 bg-white rounded-full"
-              ></div>
+              <div key={i} className="h-2 w-2 bg-white rounded-full"></div>
             ))}
           </div>
         </div>
@@ -116,10 +98,6 @@ const TicketCard: React.FC = () => {
     </div>
   );
 };
-
-
-
-
 
 export const Ticket = () => {
   return (
@@ -129,32 +107,33 @@ export const Ticket = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <p className="text-sm font-medium uppercase tracking-wider">
+                <p className="text-sm font-normal  uppercase tracking-wider">
                   SECURE YOUR SPOT NOW
-                  <div className="w-28 mt-1 h-2 bg-[#0017AF]" />
+                  <div className="w-28 mt-1 h-[5px] bg-[#0017AF]" />
                 </p>
-                <h2 className="text-4xl md:text-5xl font-bold">
-                  GET YOUR{' '}
-                  <br />
-                  <span className="text-[#0017AF]">TICKET</span>{' '}
-                  TODAY!
+                <h2 className="text-4xl md:text-5xl font-semibold">
+                  GET YOUR <br />
+                  <span className="text-[#0017AF]">TICKET</span> TODAY!
                 </h2>
               </div>
 
-              <div className="space-y-4 text-gray-600 text-lg">
-                <p>
-                  Witness heart-piercing discussions, explore the meanings
-                  of the Qur'an, and immerse yourself in beautiful recitations.
-                </p>
-                <p>
-                  Secure your spot at TQC and embark on a spiritual journey
-                  like no other.
+              <div className="text-black text-xl">
+                <p className="leading-relaxed"> 
+                  Witness heart-piercing discussions, explore the meanings of
+                  the Qur'an, and immerse yourself in beautiful recitations.
+                  Secure your spot at TQC and embark on a spiritual journey like
+                  no other.
                 </p>
               </div>
 
               <Button
-                className="bg-[#0017AF] hover:bg-[#0000DD] text-white px-8 py-6 text-lg rounded-md"
-                onClick={() => window.open("https://bitooqoh.com/explore/quran-crescendo", "_blank")}
+                className="bg-[#0017AF] hover:bg-[#0000DD] text-white px-5 py-3 text-lg rounded-lg"
+                onClick={() =>
+                  window.open(
+                    "https://bitooqoh.com/explore/quran-crescendo",
+                    "_blank"
+                  )
+                }
               >
                 Buy Ticket
               </Button>
@@ -203,5 +182,5 @@ export const Ticket = () => {
         </FadeIn>
       </Container>
     </section>
-  )
-}
+  );
+};
