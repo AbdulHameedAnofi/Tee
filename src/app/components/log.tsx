@@ -116,7 +116,7 @@ export const Logs = () => {
           TQC 1.0 in Numbers
         </h2>
 
-        {isSmallScreen ? (
+        {/* {isSmallScreen ? (
           <div className="flex flex-col items-center justify-center gap-8">
             {data.map((item, index) => {
               const value = visibleItems.includes(index)
@@ -143,7 +143,7 @@ export const Logs = () => {
               );
             })}
           </div>
-        ) : (
+        ) : ( */}
           <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-12 lg:mx-24">
             {data.map((item, index) => {
               const value = useCountUp(item.value);
@@ -163,7 +163,7 @@ export const Logs = () => {
               );
             })}
           </div>
-        )}
+        {/* )} */}
       </div>
 
       <div className="mb-24">
