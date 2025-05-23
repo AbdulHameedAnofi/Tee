@@ -10,9 +10,6 @@ import { Button } from "@/components/ui/button";
 import { useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { X, Menu } from "lucide-react";
-import heroOne from "@/../../public/hero1.svg";
-import heroTwo from "@/../../public/hero2.svg";
-import TQCHero from "@/../../public/TQCsign.svg";
 import date from "@/../../public/date.svg";
 import time from "@/../../public/time.svg";
 import location from "@/../../public/location.svg";
@@ -66,7 +63,7 @@ export const Hero = () => {
                 transition={{ delay: 0.3 }}
               > */}
               <img
-                src={tqc.src}
+                src="https://res.cloudinary.com/dt7jocfde/image/upload/tqc_aiymlx.svg"
                 alt="Logo"
                 className="w-10 h-10 md:w-12 md:h-12"
               />
@@ -187,7 +184,7 @@ export const Hero = () => {
                         <p ref={taglineRef} className={`${cinzel.className} mt-6 text-xl md:text-2xl text-[#CBEFFB]/90 max-w-3xl mx-auto`}>
                             ...Where Hearts Converge
                         </p> */}
-            <img src="/TQCsign.svg" alt="tqcsign" />
+            <img src="https://res.cloudinary.com/dt7jocfde/image/upload/TQCsign_oqfbtv.svg" alt="tqcsign" />
           </div>
 
           <div className="mt-20">
@@ -233,7 +230,7 @@ export const Hero = () => {
               <div className="hidden lg:block w-1 h-12 mt-6 bg-[#0017AF]"></div>
 
               <div className="max-w-xs mt-6 flex justify-center z-1">
-                <Image src={quraan} alt="Qur'an" className="h-auto" />
+                <img src="https://res.cloudinary.com/dt7jocfde/image/upload/quran_gfj9se.svg" alt="Qur'an" className="h-auto" />
               </div>
             </div>
           </div>

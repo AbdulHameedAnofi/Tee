@@ -1,9 +1,6 @@
 "use client";
 
-import image1 from "../../../public/car1.svg";
 import image2 from "../../../public/car2.svg";
-import image3 from "../../../public/car3.svg";
-import image4 from "../../../public/car4.svg";
 
 import React, { useState, useEffect } from "react";
 
@@ -18,7 +15,7 @@ const discussionSlides: DiscussionSlide[] = [
     title: "Heart Piercing Discussions",
     content:
       "Imagine a gathering where the words of Allah resonate through the air, touching your soul in ways you never thought possible. At The Qur’an Crescendo, our session of heart-piercing discussions, led by renowned scholars, will leave you captivated and inspired. Join us for a unique experience that will forever change your perspective on the Qur'an and its profound impact on your life.",
-    image: image1.src,
+    image: "https://res.cloudinary.com/dt7jocfde/image/upload/car1_vagwpa.svg",
   },
   {
     title: "Exploring Meanings of The Qur’an",
@@ -30,13 +27,13 @@ const discussionSlides: DiscussionSlide[] = [
     title: "Understanding & Applying the Qur’an",
     content:
       "Discover the practical wisdom and guidance found within the Qur'an where you will learn how to integrate its teachings into your daily life and unlock the potential for spiritual growth and transformation. Through engaging discussions and interactive workshops, you will find valuable insights to deepen your connection with the Words of Allah.",
-    image: image3.src,
+    image: "https://res.cloudinary.com/dt7jocfde/image/upload/car3_uitc6q.svg",
   },
   {
     title: "Enjoying Beautiful Recitations",
     content:
       "Experience the beauty and power of the Qur'an through captivating recitations from renowned qaris as they share their talents to transport you to a realm of spiritual tranquillity. Immerse yourself in the melodic rhythms and heartfelt expressions of the Words of Allah at The Qur’an Crescendo.",
-    image: image4.src,
+    image: "https://res.cloudinary.com/dt7jocfde/image/upload/car4_brkfux.svg",
   },
 ];
 export const Carousel = () => {

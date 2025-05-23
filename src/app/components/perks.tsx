@@ -64,7 +64,7 @@ export const Perks = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-48">
           <div className="flex items-center gap-12 rounded-3xl p6">
-            <Image className='' src={arrow} alt='target' />
+            <img className='' src="https://res.cloudinary.com/dt7jocfde/image/upload/arrow_pcxr22.svg" alt='target' />
             <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
               What To Look Forward To At The Qur'an Crescendo
             </h1>
