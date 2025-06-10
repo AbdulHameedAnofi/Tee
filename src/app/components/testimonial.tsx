@@ -20,19 +20,19 @@ export const Testimonial = () => {
   const testimonials: Testimonial[] = [
     {
       quote: "That was one of my best weekends, because to be honest, I've never attended a one-day soul inspiring conference like that ever",
-      author: "Shukunah Garba"
+      author: "Abdullah"
     },
     {
-      quote: "That was one of my best weekends, because to be honest, I've never attended a one-day soul inspiring conference like that ever",
-      author: "Abdullah Biden"
+      quote: "This program inspired me so much.",
+      author: "Maryam"
     },
     {
-      quote: "That was one of my best weekends, because to be honest, I've never attended a one-day soul inspiring conference like that ever",
-      author: "AbdurRahman Olisa"
+      quote: "I thought I knew the Qur’an, but I didn’t. The conference has completely transformed my relationship with the book of Allah.",
+      author: "Al-Ameen"
     },
     {
-      quote: "That was one of my best weekends, because to be honest, I've never attended a one-day soul inspiring conference like that ever",
-      author: "Haneef Adisa"
+      quote: "I look forward to more of this.",
+      author: "Aisha"
     }
   ]
 
@@ -66,7 +66,7 @@ export const Testimonial = () => {
         {testimonials.map((testimonial, index) => (
           <li
             key={index}
-            className="min-w-[300px] max-w-sm bg-white rounded-2xl p-6 relative snap-center shrink-0"
+            className="min-w-[300px] h-[269.48px] max-w-sm bg-white rounded-2xl p-6 relative snap-center shrink-0"
           >
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <div className="w-16 h-16 rounded-full bg-[#101028] flex items-center justify-center">
@@ -76,7 +76,7 @@ export const Testimonial = () => {
 
             <blockquote className="mt-8 text-black">
               <p className="text-gray-800 text-lg leading-relaxed">{testimonial.quote}</p>
-              <footer className="mt-4">
+              <footer className="mt-4 absolute bottom-6 w-[80%]">
                 <hr className="border-t border-black my-2" />
                 <cite className="text-gray-900 font-medium not-italic">{testimonial.author}</cite>
               </footer>

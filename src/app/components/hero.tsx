@@ -10,9 +10,6 @@ import { Button } from "@/components/ui/button";
 import { useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { X, Menu } from "lucide-react";
-import heroOne from "@/../../public/hero1.svg";
-import heroTwo from "@/../../public/hero2.svg";
-import TQCHero from "@/../../public/TQCsign.svg";
 import date from "@/../../public/date.svg";
 import time from "@/../../public/time.svg";
 import location from "@/../../public/location.svg";
@@ -66,7 +63,7 @@ export const Hero = () => {
                 transition={{ delay: 0.3 }}
               > */}
               <img
-                src={tqc.src}
+                src="https://res.cloudinary.com/dt7jocfde/image/upload/tqc_aiymlx.svg"
                 alt="Logo"
                 className="w-10 h-10 md:w-12 md:h-12"
               />
@@ -96,72 +93,69 @@ export const Hero = () => {
             > */}
             <div className="flex gap-4">
               <Button
-              variant="outline"
-                className="bg-[#353D59] text-white text-base font-normal border-[0.8px] border-white transition-all"
-                onClick={() =>
-                  window.open(
-                    "https://bitooqoh.com/explore/quran-crescendo",
-                    "_blank"
-                  )
-                }
+                variant="outline"
+                className="md:block hidden bg-[#353D59] text-white text-base font-normal border-[0.8px] border-white transition-all"
               >
-                Become a Sponsor
+                <a href="https://dynaraise.com/thequrancrescendo">Donate</a>
               </Button>
               <Button
                 variant="outline"
                 className="bg-[#CBEFFB] text-[#0017AF] hover:text-white text-base font-normal hover:bg-blue-700/80 transition-all"
-                onClick={() =>
-                  window.open(
-                    "https://bitooqoh.com/explore/quran-crescendo",
-                    "_blank"
-                  )
-                }
               >
-                Get Tickets
+                <a href="https://bitooqoh.com/explore/quran-crescendo">
+                  Get Tickets
+                </a>
               </Button>
             </div>
             {/* </motion.div> */}
 
             <button
-              className="md:hidden z-30"
+              className="md:hidden z-40 relative"
               onClick={() => setIsOpen((prev) => !prev)}
             >
-              {isOpen ? <X size={28} /> : <Menu size={28} />}
+              {!isOpen && <Menu size={28} />}
             </button>
           </nav>
         </div>
-        <AnimatePresence>
-          {isOpen && (
-            <motion.div
-              key="mobile-menu"
-              initial={{ x: "100%" }}
-              animate={{ x: 0 }}
-              exit={{ x: "100%" }}
-              transition={{ type: "spring", stiffness: 260, damping: 20 }}
-              className="fixed top-0 right-0 w-3/4 h-full bg-[#1A1A40] z-10 shadow-2xl flex flex-col p-6 space-y-6"
-            >
-              {navList.map(({ name, href }, index) => (
-                <motion.a
-                  key={index}
-                  href={href}
-                  onClick={() => setIsOpen(false)}
-                  className="text-lg text-white uppercase font-medium tracking-widest hover:text-blue-400"
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.2 + index * 0.1 }}
-                >
-                  {name}
-                </motion.a>
-              ))}
-              <Button
-                variant="outline"
-                className="bg-[#CBEFFB] text-[#0017AF] hover:bg-blue-700/80 transition-all"
+        {/* <AnimatePresence> */}
+        {isOpen && (
+          <motion.div
+            key="mobile-menu"
+            initial={{ x: "100%" }}
+            animate={{ x: 0 }}
+            exit={{ x: "100%" }}
+            transition={{ type: "spring", stiffness: 260, damping: 20 }}
+            className="fixed  top-0 right-0 w-3/4 h-full bg-[#1A1A40] z-30 shadow-2xl flex flex-col p-6 space-y-6"
+          >
+            <X
+              size={28}
+              className="absolute right-4"
+              onClick={() => setIsOpen(false)}
+            />
+            {navList.map(({ name, href }, index) => (
+              <motion.a
+                key={index}
+                href={href}
+                onClick={() => setIsOpen(false)}
+                className="text-lg text-white uppercase font-medium tracking-widest hover:text-blue-400 w-fit"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 + index * 0.1 }}
               >
-                Get Tickets
-              </Button>
-            </motion.div>
-          )}
-        </AnimatePresence>
+                {name}
+              </motion.a>
+            ))}
+            <Button
+              variant="outline"
+              className="bg-[#CBEFFB] text-[#0017AF] hover:bg-blue-700/80 transition-all"
+            >
+              <a href="https://dynaraise.com/thequrancrescendo" target="_blank">
+                Donate
+              </a>
+            </Button>
+          </motion.div>
+        )}
+        {/* </AnimatePresence> */}
         {/* </div> */}
         <main className="relative z-10 flex flex-col items-center justify-center px-4 pt-20 pb-12">
           <div className="text-center">
@@ -187,35 +181,49 @@ export const Hero = () => {
                         <p ref={taglineRef} className={`${cinzel.className} mt-6 text-xl md:text-2xl text-[#CBEFFB]/90 max-w-3xl mx-auto`}>
                             ...Where Hearts Converge
                         </p> */}
-            <img src="/TQCsign.svg" alt="tqcsign" />
+            <img
+              src="https://res.cloudinary.com/dt7jocfde/image/upload/TQCsign_oqfbtv.svg"
+              alt="tqcsign"
+            />
           </div>
 
           <div className="mt-20">
-            <div className="flex flex-col lg:flex-row gap-20">
-              <img src="/hero1.svg" alt="conference-gallery" />
-              <img src="/hero2.svg" alt="conference-gallery" />
+            <div className="flex flex-col xl:flex-row gap-20">
+              <img
+                src="https://ik.imagekit.io/sanni507/hero1.svg?updatedAt=1749421871828"
+                className=""
+                alt="conference-gallery"
+              />
+              <img
+                // src="/hero2.svg"
+                src="https://ik.imagekit.io/sanni507/hero2.svg?updatedAt=1749421873701"
+                className="hiden xlblock"
+                alt="conference-gallery"
+              />
             </div>
           </div>
 
           <div className="mt-20 flex justify-center">
             <div className="flex flex-col items-center justify-center gap-12 text-center text-[#CBEFFB] text-2xl lg:flex-row lg:gap-28">
               <div className="flex flex-col items-center gap-4">
-                <Image src={date} alt="Date" />
+                <img src={date} alt="Date" />
                 <h1>25th - 29th of June, 2025</h1>
               </div>
               <div className="flex flex-col items-center gap-4">
-                <Image src={time} alt="Time" />
-                <h1>8:00 AM - 6:00 PM</h1>
+                <img src={time} alt="Time" />
+                <h1>8:00 AM - 4:00 PM</h1>
               </div>
               <div className="flex flex-col items-center gap-4">
                 <Image src={location} alt="Location" />
-                <h1>Lagos Oriental Palace</h1>
+                <h1 className="max-w-80">
+                  Bayelsa Hall, Digital Bridge Institute, Cappa, Oshodi, Lagos
+                </h1>
               </div>
             </div>
           </div>
 
           <div className="relative z-10 px-6 md:px-12 lg:px-36 ">
-            <div className="w-[806px] relative bg-white m-20 md:p-10 flex flex-col lg:flex-row items-center lg:itemsstart gap-12 shadow-lg -mb-48 rounded-[20px]">
+            <div className="xl:w-[806px] w-full relative bg-white xl:m-20 mt-16 md:p-10 flex flex-col lg:flex-row items-center gap-12 shadow-lg xl:-mb-48 rounded-[20px]">
               <div className="flex-1 z-20">
                 <div
                   className={`${amiri.className} md:text-2xl md:text3xl text-black font-arabic text-center lg:text-right leading-loose mb-4`}
@@ -233,7 +241,11 @@ export const Hero = () => {
               <div className="hidden lg:block w-1 h-12 mt-6 bg-[#0017AF]"></div>
 
               <div className="max-w-xs mt-6 flex justify-center z-1">
-                <Image src={quraan} alt="Qur'an" className="h-auto" />
+                <img
+                  src="https://res.cloudinary.com/dt7jocfde/image/upload/quran_gfj9se.svg"
+                  alt="Qur'an"
+                  className="h-auto"
+                />
               </div>
             </div>
           </div>

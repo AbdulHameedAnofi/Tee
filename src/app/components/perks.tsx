@@ -16,7 +16,7 @@ export const PerkCard: React.FC<PerkCardProps> = ({
   color = '#000000',
 }) => {
   return (
-    <div className="bg-white rounded-3xl p-10 h-full flex flex-col justify-between">
+    <div className="bg-white rounded-3xl p-4 lg:p-10 h-full flex flex-col justify-between">
       <h2 className="md:text-2xl mdtext-3xl font-medium tracking-tight" style={{ color }}>
         {title}
       </h2>
@@ -59,13 +59,13 @@ export const Perks = () => {
   ]
 
   return (
-    <div className="mx-auto px-10 py-16 md:py-24 bg-[#F0F5F6]">
+    <div className="mx-auto px-4 lg:px-10 py-16 md:py-24 bg-[#F0F5F6]">
       <div className="mx-auto space-y-12">
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-48">
-          <div className="flex items-center gap-12 rounded-3xl p6">
-            <Image className='' src={arrow} alt='target' />
-            <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:mt-48">
+          <div className="flex-col lg:flex-row items-center gap-12 rounded-3xl p6">
+            <img className='' src="https://res.cloudinary.com/dt7jocfde/image/upload/arrow_pcxr22.svg" alt='target' />
+            <h1 className="text-2xl md:text-5xl font-semibold leading-tight">
               What To Look Forward To At The Qur'an Crescendo
             </h1>
           </div>

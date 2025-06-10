@@ -101,7 +101,7 @@ const TicketCard: React.FC = () => {
 
 export const Ticket = () => {
   return (
-    <section className="mx-auto px-20 py-16 md:py-24 bg-[#F0F5F6]">
+    <section className="mx-auto px-4 md:px-20 py-16 md:py-24 bg-[#F0F5F6]">
       <Container>
         <FadeIn>
           <div className="grid md:grid-cols-2 gap-12 items-center">

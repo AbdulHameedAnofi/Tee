@@ -144,7 +144,7 @@ export const Logs = () => {
             })}
           </div>
         ) : ( */}
-          <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-12 lg:mx-24">
+          <div className="grid lg:grid-cols-4 grid-cols-1 md:grid-cols-2 gap-12 lg:mx-24">
             {data.map((item, index) => {
               const value = useCountUp(item.value);
               return (
@@ -167,7 +167,7 @@ export const Logs = () => {
       </div>
 
       <div className="mb-24">
-        <h2 className="text-4xl md:text-5xl text-center mb-16 font-semibold">
+        <h2 className="text-2xl md:text-5xl text-center mb-16 font-semibold">
           Sponsors/Partners
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-6 lg:mx-24 gap-6">
