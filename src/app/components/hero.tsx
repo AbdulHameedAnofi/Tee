@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 import { useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { X, Menu } from "lucide-react";
-import date from "@/../../public/date.svg";
+// import date from "@/../../public/date.svg";
 import time from "@/../../public/time.svg";
 import location from "@/../../public/location.svg";
 import { useSplitTextAnimation } from "./split";
@@ -46,7 +46,7 @@ export const Hero = () => {
         {/* <Container className="">
                     <FadeIn> */}
         <div>
-          <nav className="relative z-20 flex justify-between items-center px6 py-4 md:px-24">
+          <nav className="relative z-20 flex justify-between items-center px-3 py-4 md:px-24">
             <div className="flex items-center gap-4">
               {/* <motion.img
                 src={basmad.src}
@@ -206,11 +206,11 @@ export const Hero = () => {
           <div className="mt-20 flex justify-center">
             <div className="flex flex-col items-center justify-center gap-12 text-center text-[#CBEFFB] text-2xl lg:flex-row lg:gap-28">
               <div className="flex flex-col items-center gap-4">
-                <img src={date} alt="Date" />
+                <img src="/date.svg" alt="Date" />
                 <h1>25th - 29th of June, 2025</h1>
               </div>
               <div className="flex flex-col items-center gap-4">
-                <img src={time} alt="Time" />
+                <img src="/time.svg" alt="Time" />
                 <h1>8:00 AM - 4:00 PM</h1>
               </div>
               <div className="flex flex-col items-center gap-4">
@@ -222,8 +222,8 @@ export const Hero = () => {
             </div>
           </div>
 
-          <div className="relative z-10 px-6 md:px-12 lg:px-36 ">
-            <div className="xl:w-[806px] w-full relative bg-white xl:m-20 mt-16 md:p-10 flex flex-col lg:flex-row items-center gap-12 shadow-lg xl:-mb-48 rounded-[20px]">
+          <div className="relative z-10 md:px-12 lg:px-36 ">
+            <div className="xl:w-[806px] w-full relative bg-white xl:m-20 mt-16 p-2 md:p-10 flex flex-col lg:flex-row items-center gap-12 shadow-lg xl:-mb-48 md:rounded-[20px]">
               <div className="flex-1 z-20">
                 <div
                   className={`${amiri.className} md:text-2xl md:text3xl text-black font-arabic text-center lg:text-right leading-loose mb-4`}
