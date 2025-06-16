@@ -70,7 +70,7 @@ export const Hero = () => {
               {/* </motion.div> */}
             </div>
 
-            <div className="hidden md:flex gap-8">
+            {/* <div className="hidden md:flex gap-8">
               {navList.map(({ name, href }, index) => (
                 <a
                   key={index}
@@ -83,7 +83,7 @@ export const Hero = () => {
                   {name}
                 </a>
               ))}
-            </div>
+            </div> */}
 
             {/* <motion.div
               className="hidden sm:flex"
@@ -129,10 +129,10 @@ export const Hero = () => {
           >
             <X
               size={28}
-              className="absolute right-4"
+              className="absolute right-4 top-2"
               onClick={() => setIsOpen(false)}
             />
-            {navList.map(({ name, href }, index) => (
+            {/* {navList.map(({ name, href }, index) => (
               <motion.a
                 key={index}
                 href={href}
@@ -144,13 +144,21 @@ export const Hero = () => {
               >
                 {name}
               </motion.a>
-            ))}
+            ))} */}
             <Button
               variant="outline"
               className="bg-[#CBEFFB] text-[#0017AF] hover:bg-blue-700/80 transition-all"
             >
               <a href="https://dynaraise.com/thequrancrescendo" target="_blank">
                 Donate
+              </a>
+            </Button>
+            <Button
+              variant="outline"
+              className="bg-[#0017AF] text-[#CBEFFB] hover:bg-blue-700/80 transition-all"
+            >
+              <a href="https://bitooqoh.com/explore/quran-crescendo" target="_blank">
+                Get Tickets
               </a>
             </Button>
           </motion.div>
